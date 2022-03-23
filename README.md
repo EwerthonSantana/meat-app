@@ -1,10 +1,10 @@
-# Meat - Angular App Starter
+# Meat - Angular App By EwerthonS with Cod3r
 
 ## 1. Passos para começar
 
 ### Clonando o Repositório
 
-`git clone https://github.com/cod3rcursos/meat-app-starter.git`
+`git clone https://github.com/EwerthonSantana/meat-app.git`
 
 ### Instalando as Dependências
 
@@ -86,7 +86,7 @@ Dependências dos pacotes que devem ficar em package.json:
   }
 ```
 
-## Upgrade para Angular 6 (Apenas para a aulas finais)
+## Upgrade para Angular 6
 
 Dependências dos pacotes que devem ficar em package.json:
 

@@ -1,0 +1,67 @@
+<form [formGroup]="contactForm" novalidate>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="page-header">
+                <i class="fa-light fa-message-text"></i> Fale Conosco!
+            </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-9">
+            <p class="lead">Seus Dados:</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-3">
+            <span class="help-block pull-right has-error-block" *ngIf="contactForm.hasError('emailsNotMatch')"><i class="fa fa-remove">
+  </i> Email-s não conferem!</span>
+        </div>
+
+        <div class="col-sm-6 col-xs-12">
+            <mt-input-container erroMessage="insira pelo menos 5 caracteres" label="Nome">
+                <input class="form-control" formControlName="name" autocomplete="off" placeholder="Nome">
+            </mt-input-container>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+            <mt-input-container erroMessage="E-mail inválido" label="E-mail">
+                <input class="form-control" formControlName="email" placeholder="E-mail">
+            </mt-input-container>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+            <mt-input-container erroMessage="E-mail inválido" label="E-mail">
+                <input class="form-control" formControlName="emailConfirmation" placeholder="Confirmar Email">
+            </mt-input-container>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+            <mt-input-container erroMessage="Celular inválido" label="Telefone">
+                <input class="form-control" formControlName="fone" placeholder="Celular - somente números">
+            </mt-input-container>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+            <mt-input-container erroMessage="Campo Obrigatório!" label="Título">
+                <input class="form-control" formControlName="tittle" placeholder="Informe o título da mensagem">
+            </mt-input-container>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+            <mt-input-container erroMessage="Campo Obrigatório!" label="Mensagem">
+                <input class="form-control" formControlName="message" placeholder="Escreva sua mensagem aqui!">
+            </mt-input-container>
+        </div>
+
+
+    </div>
+</form>
+
+<div class="row">
+    <div class="col-xs-12">
+        <button (click)="checkContact(contactForm.value)" class="btn btn-success pull-right" [disabled]="!contactForm.valid">
+          <i class="fa-solid fa-address-book"></i> Enviar
+
+</button>
+    </div>
+</div>

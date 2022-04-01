@@ -7,7 +7,8 @@
 `git clone https://github.com/EwerthonSantana/meat-app.git`
 
 ### Instalando as Dependências
-
+baixar o NodeJs
+instalar o angular/cli -> npm install angular/cli@6.0
 `npm install`
 
 ### Inicializando o Servidor
@@ -20,9 +21,17 @@
 
 `npm install -g json-server`
 
+### Instalando o nodemon
+
+npm install -g nodemon
+
 ### Iniciando o serviço (raiz da aplicação)
 
 `json-server db.json`
+
+## Iniciando json com nodemon (Atual)
+
+`nodemon backend/dist/server.js`
 
 ## Goodies
 
